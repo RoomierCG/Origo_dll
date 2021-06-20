@@ -9,7 +9,7 @@ const config = {
   },
 
   entry: { index: resolve(__dirname, "src/index.js") },
-  output: { path: resolve(__dirname, "static/web") },
+  output: { path: resolve(__dirname, "static/build") },
 
   module: {
     rules: [
