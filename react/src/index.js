@@ -5,6 +5,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 
 import App from "./components/app";
+import "../static/styles/main.scss"
 
 ReactDOM.render(
     <Router>
