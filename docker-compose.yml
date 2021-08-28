@@ -2,8 +2,8 @@ version: "3.9"
 
 services:
 
-  django:
-    container_name: django
+  django-origo:
+    container_name: django-origo
     build:
       context: ./
       dockerfile: ./.docker/django/Dockerfile
@@ -12,8 +12,8 @@ services:
       - .:/opt
     restart: unless-stopped
   
-  node:
-    container_name: node
+  node-origo:
+    container_name: node-origo
     build:
       context: ./
       dockerfile: ./.docker/node/Dockerfile
@@ -21,8 +21,8 @@ services:
       - ./react:/opt/app/
     restart: unless-stopped
 
-  nginx:
-    container_name: nginx
+  nginx-origo:
+    container_name: nginx-origo
     build:
       context: ./.docker/nginx
       args:

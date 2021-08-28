@@ -9,7 +9,7 @@ const config = {
   },
 
   entry: { index: resolve(__dirname, "src/index.js") },
-  output: { path: resolve(__dirname, "static/build") },
+  //output: { path: resolve(__dirname, "static/build") },
 
   module: {
     rules: [
@@ -22,7 +22,7 @@ const config = {
   },
   output: {
     filename: "bundle.js",
-    path: resolve(__dirname, "build"),
+    path: resolve(__dirname, "static/build"),
   },
 };
 
