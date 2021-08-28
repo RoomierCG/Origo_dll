@@ -18,6 +18,10 @@ const config = {
         use: "babel-loader",
         exclude: /node_modules/,
       },
+      {
+				test: /\.(s[ac]|c)ss$/i,
+				use: [{ loader: "style-loader" }, { loader: "css-loader" }, { loader: "sass-loader" }],
+			},
     ],
   },
   output: {
