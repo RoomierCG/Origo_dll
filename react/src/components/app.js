@@ -1,7 +1,16 @@
-const App = () => {
-    return(
-        <div>Lucas</div>
-    )
-};
+//Dependencias de react
+import React, { Component } from 'react';
 
-export default App;
+//Modulos de Material UI
+import CssBaseline from "@material-ui/core/CssBaseline";
+
+export default class App extends Component {
+    render(){
+        return(
+            <>
+                <CssBaseline />
+                <h1>hola mundo</h1>
+            </>
+        );
+    }
+}
